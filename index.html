@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Stylish Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    📝 My Stylish Blog
+  </header>
+
+  <div class="main-container">
+    <div class="left-pane">
+      <h2>✍️ Create New Post</h2>
+      <input id="title" placeholder="Post Title">
+      <textarea id="content" rows="6" placeholder="Write your thoughts..." oninput="checkFields()"></textarea>
+      <button id="publishBtn" onclick="addPost()" disabled>Publish</button>
+    </div>
+
+    <div class="right-pane">
+      <h2>📚 All Posts</h2>
+      <div class="posts" id="posts"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
